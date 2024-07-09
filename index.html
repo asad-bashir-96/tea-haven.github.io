@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/reset.css" />
+    <link rel="stylesheet" href="./styles/globals.css" />
+    <link rel="stylesheet" href="./styles/styles.css" />
+    
+
+    <script src="./scripts/main.js" defer></script>
+    <title>Tea Haven</title>
+  </head>
+  <body>
+    <header class="header">
+      <nav>
+        <menu class="header__menu">
+          <li><a class="header__menu__link" href="#about">About</a></li>
+          <li><a class="header__menu__link" href="#benefits">Benefits</a></li>
+          <li><a class="header__menu__link" href="#category">Collections</a></li>
+          <li><a class="header__menu__link" href="#contact">Contact</a></li>
+        </menu>
+      </nav>
+    </header>
+    
+
+    <section class="hero">
+      <div class="hero__group">
+        <h1 class="hero__title">Discover the World of Tea</h1>
+        <p class="hero__description">
+          Indulge in the rich history, diverse flavors, and health benefits of
+          tea. From soothing herbal blends to energizing black teas, explore the
+          fascinating world of tea culture and tradition.
+        </p>
+        <a href="#category" class="hero__link">Explore Our Tea Collection</a>
+      </div>
+    </section>
+
+    <main>
+      <div class="wrapper">
+        <section id="about" class="about">
+          <img class="about__img" src="./assests/about.jpg"/>
+          <article >
+              <h2 class="about__title">About Us</h2>
+              <p class="about__description">
+                At Tea Haven, we are passionate about sharing the enchanting
+                world of tea with you. Our mission is to provide you with not
+                just a beverage, but an experience that delights your senses and
+                nourishes your soul. From sourcing the finest tea leaves from
+                around the globe to curating educational content about tea
+                culture and health benefits, we are committed to helping you
+                explore, learn, and indulge in the timeless charm of tea.
+              </p>
+          </article>
+        </section>
+      </div>
+
+      <section id="benefits" class="benefits">
+        <h2 class="benefits__title">Discover the Health Benefits of Tea</h2>
+        <p class="benefits__description">
+          Explore the numerous health benefits associated with drinking tea,
+          from boosting immunity to promoting relaxation.
+        </p>
+
+        <div class="wrapper">
+          <div class="benefits__cards">
+            <article tabindex="0" class="benefits__card">
+              <img
+                class="benefits__card__icon"
+                src="./assests/leaf.png"
+                alt="Leaf icon sourced from https://www.flaticon.com/free-icons/leaf"
+              />
+              <h3 class="benefits__card__title">Antioxidant Powerhouse</h3>
+              <p class="benefits__card__description">
+                Tea is rich in antioxidants that help fight free radicals,
+                reduce inflammation, and protect against chronic diseases.
+              </p>
+            </article>
+            <article tabindex="0" class="benefits__card">
+              <img
+                class="benefits__card__icon"
+                src="./assests/heart.png"
+                alt="Leaf icon sourced from https://www.flaticon.com/free-icons/heart"
+              />
+
+              <h3 class="benefits__card__title">Promotes Heart Health</h3>
+              <p class="benefits__card__description">
+                Regular consumption of tea has been linked to lower risk of
+                heart disease, thanks to its ability to improve blood flow and
+                lower cholesterol levels.
+              </p>
+            </article>
+            <article tabindex="0" class="benefits__card">
+              <img
+                class="benefits__card__icon"
+                src="./assests/immunity.png"
+                alt="Leaf icon sourced from https://www.flaticon.com/free-icons/immunity"
+              />
+              <h3 class="benefits__card__title">Boosts Immunity</h3>
+              <p class="benefits__card__description">
+                The antioxidants and vitamins found in tea can help strengthen
+                the immune system, reducing the risk of infections and
+                illnesses.
+              </p>
+            </article>
+            <article tabindex="0" class="benefits__card">
+              <img
+                class="benefits__card__icon"
+                src="./assests/stomach.png"
+                alt="Leaf icon sourced from https://www.flaticon.com/free-icons/stomach"
+              />
+              <h3 class="benefits__card__title">Aids Digestion</h3>
+              <p class="benefits__card__description">
+                Certain types of tea, like herbal teas, can aid digestion,
+                relieve bloating, and soothe upset stomachs.
+              </p>
+            </article>
+            <article tabindex="0" class="benefits__card">
+              <img
+                class="benefits__card__icon"
+                src="./assests/focus.png"
+                alt="Leaf icon sourced from https://www.flaticon.com/free-icons/focus"
+              />
+              <h3 class="benefits__card__title">Enhances Mental Clarity</h3>
+              <p class="benefits__card__description">
+                The caffeine and L-theanine in tea can improve focus, alertness,
+                and cognitive function, promoting mental clarity and
+                productivity.
+              </p>
+            </article>
+            <article tabindex="0" class="benefits__card">
+              <img
+                class="benefits__card__icon"
+                src="./assests/meditation.png"
+                alt="Leaf icon sourced from https://www.flaticon.com/free-icons/meditation"
+              />
+              <h3 class="benefits__card__title">Promotes Relaxation</h3>
+              <p class="benefits__card__description">
+                Tea contains compounds that have calming effects on the mind and
+                body, making it an ideal beverage for relaxation and stress
+                relief.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <div class="wrapper">
+        <section id="category">
+          <h2 class="category__title">Tea Collection</h2>
+          <div class="category">
+            <article tabindex="0" class="category__tea category__tea--black">
+              <p class="category__name">black</p>
+            </article>
+            <article tabindex="0" class="category__tea category__tea--green">
+              <p class="category__name">green</p>
+            </article>
+            <article tabindex="0" class="category__tea category__tea--rooibos">
+              <p class="category__name">rooibos</p>
+            </article>
+            <article tabindex="0" class="category__tea category__tea--herbal">
+              <p class="category__name">herbal</p>
+            </article>
+            <article tabindex="0" class="category__tea category__tea--white">
+              <p class="category__name">white</p>
+            </article>
+            <article tabindex="0" class="category__tea category__tea--oolong">
+              <p class="category__name">Oolong</p>
+            </article>
+          </div>
+        </section>
+      </div>
+
+      <section class="quote">
+        <blockquote
+          cite="https://pos.toasttab.com/blog/on-the-line/tea-quotes-and-captions"
+        >
+          <p class="quote__description">
+            &quot;Tea is the ultimate mental and medical remedy and has the
+            ability to make one's life more full and complete.&quot;
+          </p>
+          <footer>&mdash; Myoan Eisai</footer>
+        </blockquote>
+      </section>
+
+      <section class="testimonials">
+        <h2 class="testimonials__title">What Our Customers Are Saying</h2>
+
+        <div class="wrapper">
+          <div class="testimonials__cards">
+            <article tabindex="0" class="testimonials__card">
+              <header class="testimonials__card__header">
+                <img
+                  class="testimonials__card__img"
+                  src="./assests/emily.jpg"
+                />
+
+                <hgroup>
+                  <h3 class="testimonials__card__name">Emily M.</h3>
+                  <p class="testimonials__card__location">New York, USA</p>
+                </hgroup>
+              </header>
+              <blockquote>
+                <p class="testimonials__card__quote">
+                  "Tea Haven has completely transformed my tea experience! Their
+                  selection of teas is unparalleled, and I love how they educate
+                  their customers about the different varieties and health
+                  benefits. Every cup feels like a journey to serenity."
+                </p>
+              </blockquote>
+              <footer class="testimonials__card__footer">&mdash; Emily M.</footer>
+            </article>
+            <article tabindex="0" class="testimonials__card">
+              <header class="testimonials__card__header">
+                <img
+                  class="testimonials__card__img"
+                  src="./assests/david.jpg"
+                />
+
+                <hgroup>
+                  <h3 class="testimonials__card__name">David S.</h3>
+                  <p class="testimonials__card__location">London, UK</p>
+                </hgroup>
+              </header>
+              <blockquote>
+                <p class="testimonials__card__quote">
+                  "I've been a tea enthusiast for years, but Tea Haven took my
+                  passion to a whole new level. Their commitment to quality and
+                  authenticity shines through in every sip. Whether it's a
+                  robust black tea or a delicate green tea, I always find
+                  something to delight my taste buds."
+                </p>
+              </blockquote>
+              <footer class="testimonials__card__footer">&mdash; David S.</footer>
+
+            </article>
+            <article tabindex="0" class="testimonials__card">
+              <header class="testimonials__card__header">
+                <img
+                  class="testimonials__card__img"
+                  src="./assests/priya.jpg"
+                />
+
+                <hgroup>
+                  <h3 class="testimonials__card__name">Priya Patel</h3>
+                  <p class="testimonials__card__location">Mumbai, India</p>
+                </hgroup>
+              </header>
+              <blockquote>
+                <p class="testimonials__card__quote">
+                  "As someone deeply connected to tea culture, I can't express
+                  enough gratitude for Tea Haven. Their dedication to sourcing
+                  teas ethically and sustainably is commendable. From the
+                  aromatic chai blends to the soothing herbal infusions, each
+                  cup tells a story of tradition and craftsmanship."
+                </p>
+              </blockquote>
+              <footer class="testimonials__card__footer">&mdash; Priya Patel</footer>
+
+            </article>
+            <article tabindex="0" class="testimonials__card">
+              <header class="testimonials__card__header">
+                <img class="testimonials__card__img" src="./assests/alex.jpg" />
+
+                <hgroup>
+                  <h3 class="testimonials__card__name">Alex H.</h3>
+                  <p class="testimonials__card__location">Sydney, Australia</p>
+                </hgroup>
+              </header>
+              <blockquote>
+                <p class="testimonials__card__quote">
+                  "Tea Haven has become my go-to destination for premium teas.
+                  What sets them apart is not just their exceptional products
+                  but also their personalized service. Whether I'm seeking
+                  recommendations or brewing tips, their knowledgeable staff is
+                  always there to guide me. It's like having a tea mentor on
+                  speed dial!"
+                </p>
+              </blockquote>
+              <footer class="testimonials__card__footer">&mdash; Alex H.</footer>
+
+            </article>
+            <article tabindex="0" class="testimonials__card">
+              <header class="testimonials__card__header">
+                <img
+                  class="testimonials__card__img"
+                  src="./assests/maria.jpg"
+                />
+
+                <hgroup>
+                  <h3 class="testimonials__card__name">Maria Lopez</h3>
+                  <p class="testimonials__card__location">Barcelona, Spain</p>
+                </hgroup>
+              </header>
+              <blockquote>
+                <p class="testimonials__card__quote">
+                  "Tea Haven has become an integral part of my daily routine.
+                  Their teas are not just beverages; they're moments of
+                  mindfulness in a hectic world. I appreciate their dedication
+                  to sustainability and social responsibility, making each cup
+                  of tea not only delicious but also meaningful."
+                </p>
+              </blockquote>
+              <footer class="testimonials__card__footer">&mdash; Maria Lopez</footer>
+
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="contact">
+        <div class="wrapper">
+          <div class="contact__container">
+            <form class="contact__form">
+              <hgroup>
+                <h2 class="contact__form__title">Contact</h2>
+                <p class="contact__form__description">
+                  Whether you have a question about anything, our team is ready
+                  to answer all your question.
+                </p>
+              </hgroup>
+              <div class="contact__form__inputs">
+                <div class="contact__form__input">
+                  <label for="name">Name</label>
+                  <input autocomplete="off" required type="text" name="name" id="name" />
+                </div>
+                <div class="contact__form__input">
+                  <label for="email">Email</label>
+                  <input autocomplete="off" required type="email" name="name" id="email" />
+                </div>
+                <div class="contact__form__input">
+                  <label for="phone">Phone</label>
+                  <input
+                  autocomplete="off"
+                    type="tel"
+                    pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+                    name="phone"
+                    id="phone"
+                  />
+                </div>
+                <div class="contact__form__input">
+                  <label for="subject">Subject</label>
+                  <input autocomplete="off" type="text" name="subject" id="subject" />
+                </div>
+                <div
+                  class="contact__form__input contact__form__inputs--message"
+                >
+                  <label for="message">Message</label>
+                  <textarea
+                  autocomplete="off"
+                    required
+                    name="message"
+                    id="message"
+                    rows="8"
+                  ></textarea>
+                </div>
+              </div>
+              <button class="contact__form__btn">Contact Now</button>
+            </form>
+            <article class="contact__information">
+              <h2 class="contact__information__title">Our Information</h2>
+
+              <ul class="contact__information__list">
+                <li class="contact__information__item">
+                  <img
+                    class="contact__information__img"
+                    src="./assests/phone-outgoing.svg"
+                  />
+                  <p>
+                    <a class="contact__information__link" href="tel:11234567890"
+                      >+1 (123) 456-7890</a
+                    >
+                  </p>
+                </li>
+                <li class="contact__information__item">
+                  <img
+                    class="contact__information__img"
+                    src="./assests/mail.svg"
+                  />
+                  <a
+                    class="contact__information__link"
+                    href="mailto:info@teahaven.com"
+                    >Email: info@teahaven.com</a
+                  >
+                </li>
+                <li class="contact__information__item">
+                  <img
+                    class="contact__information__img"
+                    src="./assests/map-pin.svg"
+                  />
+                  <p>
+                    <address class="contact__information__link" >1234 Tea Avenue, Teatown, USA</address>
+                  </p>
+                </li>
+              </ul>
+            </article>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

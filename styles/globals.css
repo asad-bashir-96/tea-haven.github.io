@@ -1,0 +1,209 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+:root {
+  /*Primary Color Scale*/
+  --grass-1: #fbfefb;
+  --grass-2: #f5fbf5;
+  --grass-3: #e9f6e9;
+  --grass-4: #daf1db;
+  --grass-5: #c9e8ca;
+  --grass-6: #b2ddb5;
+  --grass-7: #94ce9a;
+  --grass-8: #65ba74;
+  --grass-9: #46a758;
+  --grass-10: #3e9b4f;
+  --grass-11: #2a7e3b;
+  --grass-12: #203c25;
+
+  /*Secondary Color Scale*/
+  --lime-1: #fcfdfa;
+  --lime-2: #f8faf3;
+  --lime-3: #eef6d6;
+  --lime-4: #e2f0bd;
+  --lime-5: #d3e7a6;
+  --lime-6: #c2da91;
+  --lime-7: #abc978;
+  --lime-8: #8db654;
+  --lime-9: #bdee63;
+  --lime-10: #b0e64c;
+  --lime-11: #5c7c2f;
+  --lime-12: #37401c;
+
+  /*Gray Scale*/
+  --olive-1: #fcfdfc;
+  --olive-2: #f8faf8;
+  --olive-3: #eff1ef;
+  --olive-4: #e7e9e7;
+  --olive-5: #dfe2df;
+  --olive-6: #d7dad7;
+  --olive-7: #cccfcc;
+  --olive-8: #b9bcb8;
+  --olive-9: #898e87;
+  --olive-10: #7f847d;
+  --olive-11: #60655f;
+  --olive-12: #1d211c;
+
+  /*Typography Scale*/
+  --fs-h1: 2.986rem;
+  --fs-h2: 2.488rem;
+  --fs-h3: 2.074rem;
+  --fs-h4: 1.728rem;
+  --fs-h5: 1.44rem;
+  --fs-h6: 1.2rem;
+  --fs-base: 1.125rem;
+  --fs-small: 0.85rem;
+
+  /*Font Weight Scale*/
+  --fw-bold: 600;
+  --fw-base: 300;
+  --fw-thin: 200;
+
+  /*Radius Scale*/
+  --radius--small: 0.375rem;
+  --radius-base: 0.75rem;
+  --radius-full: 100vw;
+
+  /*Shadow Scale*/
+  --shadow-base: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px,
+    rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+
+  /*Transition Scale*/
+  --transition-base: 150ms ease-in-out;
+
+  /*Spacing Scale*/
+  --space-3: 3rem;
+  --space-2: 2rem;
+  --space-1: 1rem;
+  --space-055: 0.55rem;
+  --space-025: 0.25rem;
+}
+
+/*Dark Mode Scales*/
+@media (prefers-color-scheme: dark) {
+  :root {
+    --grass-1: #0e1511;
+    --grass-2: #141a15;
+    --grass-3: #1b2a1e;
+    --grass-4: #1d3a24;
+    --grass-5: #25482d;
+    --grass-6: #2d5736;
+    --grass-7: #366740;
+    --grass-8: #3e7949;
+    --grass-9: #46a758;
+    --grass-10: #53b365;
+    --grass-11: #71d083;
+    --grass-12: #c2f0c2;
+
+    --lime-1: #11130c;
+    --lime-2: #151a10;
+    --lime-3: #1f2917;
+    --lime-4: #29371d;
+    --lime-5: #334423;
+    --lime-6: #3d522a;
+    --lime-7: #496231;
+    --lime-8: #577538;
+    --lime-9: #bdee63;
+    --lime-10: #d4ff70;
+    --lime-11: #bde56c;
+    --lime-12: #e3f7ba;
+
+    --olive-1: #111210;
+    --olive-2: #181917;
+    --olive-3: #212220;
+    --olive-4: #282a27;
+    --olive-5: #2f312e;
+    --olive-6: #383a36;
+    --olive-7: #454843;
+    --olive-8: #5c625b;
+    --olive-9: #687066;
+    --olive-10: #767d74;
+    --olive-11: #afb5ad;
+    --olive-12: #eceeec;
+  }
+}
+*,
+*::before,
+*::after {
+  font-family: "Montserrat", sans-serif;
+}
+
+/*Html Styles*/
+html {
+  scroll-behavior: smooth;
+  scroll-padding: 5.5rem;
+}
+
+/*Wrapper Styles*/
+.wrapper {
+  max-width: 1280px;
+  margin-inline: auto;
+  padding: 0 1rem;
+}
+
+/*Body Styles*/
+body {
+  background-color: var(--grass-1);
+  color: var(--grass-12);
+}
+
+body *::selection {
+  background-color: var(--grass-10);
+}
+
+section:nth-child(2n):not(.quote) {
+  background-color: var(--grass-2);
+}
+
+/*General Section Styles*/
+section {
+  margin-bottom: var(--space-3);
+}
+
+section h2 {
+  margin-bottom: 1rem;
+}
+
+/*Header Styles*/
+.header {
+  position: sticky;
+  top: 0;
+  height: 75px;
+  background-color: var(--grass-9);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 2;
+}
+
+.header__menu {
+  display: flex;
+  gap: var(--space-2);
+}
+
+.header__menu__link {
+  color: inherit;
+  text-decoration: none;
+  font-size: var(--fs-h5);
+  position: relative;
+  outline: 2px solid transparent;
+}
+
+.header__menu__link::after {
+  content: "";
+  transition: var(--transition-base);
+  position: absolute;
+  bottom: -0.2rem;
+  border-radius: var(--radius-base);
+  left: 0;
+  height: 0.3rem;
+  width: 0;
+  background-color: var(--lime-9);
+}
+
+.header__menu__link:hover::after {
+  width: 100%;
+}
+
+.header__menu__link:focus::after {
+  width: 100%;
+}
